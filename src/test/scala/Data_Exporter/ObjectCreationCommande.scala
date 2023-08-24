@@ -5,31 +5,35 @@ import io.gatling.http.Predef._
 
 object ObjectCreationCommande {
 
+  val headers = Map(
+    "Content-Type" -> "application/json",
+    "Accept" -> "/"
+  )
 
-  var idOrderCCMCounter = 9466
-  var idCommercialCCMCounter = 9467
+  var idOrderCCMCounter = 3761110009466L
+  var idCommercialCCMCounter = 3761110009467L
 
   val scnCreationCommande = scenario("Order Data Exporter Tests")
     .exec { session =>
       idOrderCCMCounter += 1
       idCommercialCCMCounter += 1
-      val idOrderCCM: String = s"PREP376111000$idOrderCCMCounter"
-      val idCommercialCCM : String = s"PREP376111000$idCommercialCCMCounter"
+      val idOrderCCM: String = s"PREP$idOrderCCMCounter"
+      val idCommercialCCM : String = s"PREP$idCommercialCCMCounter"
       session.set("idOrderCCM", idOrderCCM)
       .set("idCommercialCCM", idCommercialCCM)
 
     }
-.exec { session =>
-  println("idOrderCCM :" + session("idOrderCCM").as[String])
-  session
-}
+  .exec { session =>
+    println("idOrderCCM :" + session("idOrderCCM").as[String])
+    session
+  }
     .exec { session =>
       println("idCommercialCCM :" + session("idCommercialCCM").as[String])
       session
     }
     .exec(http("Create Commercial Order")
       .post("/order-repo/rest/v1/commercialOrders?startProcess=true")
-      .header("content-type","application/json")
+      .headers(headers)
       .body(StringBody(
         """
           |{
