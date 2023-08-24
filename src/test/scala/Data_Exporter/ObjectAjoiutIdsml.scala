@@ -7,7 +7,7 @@ object ObjectAjoiutIdsml {
 
   val scnAjoutIDSML = scenario("Order Data Exporter Tests")
     .exec(http("Update Order with IDSML")
-      .patch("/oms-api/rest/v1/orders/PREP3751110009467")
+      .patch("/oms-api/rest/v1/orders/#{idOrderCCM}")
       .header("content-type","application/json")
       .body(StringBody(
         """[
