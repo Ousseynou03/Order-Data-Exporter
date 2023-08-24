@@ -1,4 +1,0 @@
-RUN	Data_Exporter.OrderDataExporterSimulation	orderdataexportersimulation	1692851860690	 	3.9.5
-REQUEST		Update Order by Removing IDSML	1692851868504	1692851868505	KO	j.n.UnknownHostException: vip-gl-pp-oms-core.pp.ecom.inet
-USER	Order Data Exporter Update	END	1692851868517
-USER	Order Data Exporter Update	START	1692851868517

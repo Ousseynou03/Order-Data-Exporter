@@ -1,4 +1,0 @@
-RUN	Data_Exporter.OrderDataExporterSimulation	orderdataexportersimulation	1692847899815	 	3.9.5
-ERROR	Create Commercial Order: Failed to build request: No attribute named 'idCommercialCCM' is defined 	1692847907220
-USER	Order Data Exporter	END	1692847907231
-USER	Order Data Exporter	START	1692847907231

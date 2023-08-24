@@ -1,4 +1,0 @@
-RUN	Data_Exporter.OrderDataExporterSimulation	orderdataexportersimulation	1692851248267	 	3.9.5
-REQUEST		Create Commercial Order	1692851255638	1692851255639	KO	j.n.UnknownHostException: vip-gl-pp-oms-core.pp.ecom.inet
-USER	Order Data Exporter Creation	END	1692851255648
-USER	Order Data Exporter Creation	START	1692851255648

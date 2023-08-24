@@ -21,10 +21,6 @@ object ObjectAjoutIdsml {
         session.set("idOrderCCM", idOrderCCM)
 
       }
-        .exec { session =>
-          println("idOrderCCM :" + session("idOrderCCM").as[String])
-          session
-        }
     .exec(http("Update Order with IDSML")
       .patch("/oms-api/rest/v1/orders/#{idOrderCCM}")
       .headers(headers)

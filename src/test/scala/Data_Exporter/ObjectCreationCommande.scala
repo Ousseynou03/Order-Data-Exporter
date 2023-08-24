@@ -23,14 +23,14 @@ object ObjectCreationCommande {
       .set("idCommercialCCM", idCommercialCCM)
 
     }
-  .exec { session =>
+/*  .exec { session =>
     println("idOrderCCM :" + session("idOrderCCM").as[String])
     session
-  }
-    .exec { session =>
+  }*/
+/*    .exec { session =>
       println("idCommercialCCM :" + session("idCommercialCCM").as[String])
       session
-    }
+    }*/
     .exec(http("Create Commercial Order")
       .post("/order-repo/rest/v1/commercialOrders?startProcess=true")
       .headers(headers)
