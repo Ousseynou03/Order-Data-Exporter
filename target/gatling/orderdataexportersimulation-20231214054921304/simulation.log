@@ -1,0 +1,4 @@
+RUN	Data_Exporter.OrderDataExporterSimulation	orderdataexportersimulation	1702532961304	 	3.9.5
+USER	Order Data Exporter Creation	START	1702532962202
+ERROR	Create Commercial Order: Failed to build request: Resource jddCreationCommande not found 	1702532962212
+USER	Order Data Exporter Creation	END	1702532962218

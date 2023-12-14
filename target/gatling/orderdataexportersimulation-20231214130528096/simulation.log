@@ -1,0 +1,7 @@
+RUN	Data_Exporter.OrderDataExporterSimulation	orderdataexportersimulation	1702559128096	 	3.9.5
+REQUEST		CancelDelayEndOrder	1702559130091	1702559130091	KO	j.n.UnknownHostException: vip-gl-pp-oms-core.pp.ecom.inet
+REQUEST		Create Commercial Order	1702559130091	1702559130091	KO	j.n.UnknownHostException: vip-gl-pp-oms-core.pp.ecom.inet
+USER	Check Cancelation	END	1702559130098
+USER	Order Data Exporter Creation	END	1702559130098
+USER	Check Cancelation	START	1702559130098
+USER	Order Data Exporter Creation	START	1702559130098

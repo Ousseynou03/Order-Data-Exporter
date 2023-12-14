@@ -15,17 +15,14 @@ class OrderDataExporterSimulation extends Simulation{
 
 
   val scnCreationCommande = scenario("Order Data Exporter Creation").exec(ObjectCreationCommande.scnCreationCommande)
-  val scnAjoutIDSML = scenario("Order Data Exporter Update").exec(ObjectAjoutIdsml.scnAjoutIDSML)
-  val scnRemoveIDSML = scenario("Order Data Exporter Remove").exec(ObjectSupprimerIDSML.scnRemoveIDSML)
-
+  val scnCommandeDelivery = scenario("Creation Commande Delivery").exec(ObjectCommandeDelivery.scnCommandeDelivery)
 
 
 
 
   setUp(
     scnCreationCommande.inject(atOnceUsers(1)),
-    scnAjoutIDSML.inject(atOnceUsers(1)),
-    scnRemoveIDSML.inject(atOnceUsers(1)),
+    scnCommandeDelivery.inject(atOnceUsers(1)),
   ).protocols(httpProtocol)
 
 

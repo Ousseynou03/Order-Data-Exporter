@@ -1,0 +1,5 @@
+RUN	Data_Exporter.OrderDataExporterSimulation	orderdataexportersimulation	1702559713251	 	3.9.5
+REQUEST		Create Commercial Order	1702559715772	1702559715772	KO	j.n.UnknownHostException: vip-gl-pp-oms-core.pp.ecom.inet
+USER	Order Data Exporter Creation	START	1702559715779
+ERROR	Unlock CheckCancelation: Failed to build request: No attribute named 'idOrderCancelation' is defined 	1702559719783
+USER	Order Data Exporter Creation	END	1702559723787

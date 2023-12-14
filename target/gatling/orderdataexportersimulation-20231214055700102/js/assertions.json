@@ -1,0 +1,10 @@
+{
+  "simulation": "Data_Exporter.OrderDataExporterSimulation",
+  "simulationId": "orderdataexportersimulation-20231214055700102",
+  "start": 1702533421219,
+  "description": "",
+  "scenarios": ["Order Data Exporter Creation"],
+  "assertions": [
+
+  ]
+}

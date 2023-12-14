@@ -1,0 +1,28 @@
+{
+
+  "orderCode": "{{PREP}}{{idOrder}}",
+
+  "returnModeCode": "MAGASIN",
+
+  "posName": "magasin-haussmann",
+
+  "entries": [
+
+    {
+      "orderEntryNumber": 1,
+
+      "returnedQuantity": 1,
+
+      "reason": "SIZE_VERY_SMALL_11"
+
+    }
+
+  ],
+
+  "creationOrigin": "CUSTOMER_SERVICE",
+
+  "creatorId": "admin",
+
+  "creatorIsAdmin": true
+
+}
