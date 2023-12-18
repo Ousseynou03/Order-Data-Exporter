@@ -14,15 +14,18 @@ class OrderDataExporterSimulation extends Simulation{
     .header("Authorization","Basic b21zOm9tcw==")
 
 
-  val scnCreationCommande = scenario("Order Data Exporter Creation").exec(ObjectCreationCommande.scnCreationCommande)
-  val scnCommandeDelivery = scenario("Creation Commande Delivery").exec(ObjectCommandeDelivery.scnCommandeDelivery)
+ // val scnCreationCommande = scenario("Order Data Exporter Creation").exec(ObjectCreationCommande.scnCreationCommande)
+ // val scnCommandeDelivery = scenario("Creation Commande Delivery").exec(ObjectCommandeDelivery.scnCommandeDelivery)
+
+  val scnCommandeLogistique = scenario("Order Data Exporter Commande Logistique").exec(CommandeLogistique.scnCommandeLogistique)
+  val scnCreationRetour = scenario("Order Data Exporter Creation Retour").exec(CreationRetour.scnCreationRetour)
 
 
 
 
   setUp(
-    scnCreationCommande.inject(atOnceUsers(1)),
-    scnCommandeDelivery.inject(atOnceUsers(1)),
+    scnCommandeLogistique.inject(atOnceUsers(1)),
+    scnCreationRetour.inject(atOnceUsers(1)),
   ).protocols(httpProtocol)
 
 

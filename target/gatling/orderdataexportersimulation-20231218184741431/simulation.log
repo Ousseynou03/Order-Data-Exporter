@@ -1,0 +1,7 @@
+RUN	Data_Exporter.OrderDataExporterSimulation	orderdataexportersimulation	1702925261431	 	3.9.5
+REQUEST		Initiate Return	1702925262890	1702925262890	KO	j.n.UnknownHostException: vip-gl-pp-oms-core.pp.ecom.inet
+REQUEST		Create Commercial Order Logistique	1702925262890	1702925262890	KO	j.n.UnknownHostException: vip-gl-pp-oms-core.pp.ecom.inet
+USER	Order Data Exporter Creation Retour	START	1702925262897
+USER	Order Data Exporter Commande Logistique	START	1702925262897
+USER	Order Data Exporter Creation Retour	END	1702925267899
+USER	Order Data Exporter Commande Logistique	END	1702925267900
